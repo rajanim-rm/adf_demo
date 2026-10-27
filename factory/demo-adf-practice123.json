@@ -1,0 +1,21 @@
+{
+	"name": "demo-adf-practice123",
+	"properties": {
+		"globalParameters": {
+			"email_recipient": {
+				"type": "string",
+				"value": "rajanirddy.m@gmail.com"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cab3ad5a-f370-4cfd-a5a3-6236aa9fbf50",
+		"tenantId": "a0a94eaa-26bd-4524-84f7-f675863d3fab"
+	}
+}
