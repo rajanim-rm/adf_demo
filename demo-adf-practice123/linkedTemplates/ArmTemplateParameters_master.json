@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "demo-adf-practice123"
+		},
+		"LS_SQL_SERVER_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://demorajaniadls.dfs.core.windows.net/"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_server": {
+			"value": "test-sqlserverserver.database.windows.net"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_database": {
+			"value": "test-sqlserverdb"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_userName": {
+			"value": "sqlserveruser"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "test-sqlserverserver.database.windows.net"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "test-sqlserverdb"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sqlserveruser"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
