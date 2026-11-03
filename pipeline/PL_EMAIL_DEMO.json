@@ -43,8 +43,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "table_name",
-					"value": "Customers"
+					"variableName": "pipelineReturnValue",
+					"setSystemVariable": true
 				}
 			}
 		],
