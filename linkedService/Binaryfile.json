@@ -1,0 +1,10 @@
+{
+	"name": "Binaryfile",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://demorajaniadls.dfs.core.windows.net/"
+		}
+	}
+}
