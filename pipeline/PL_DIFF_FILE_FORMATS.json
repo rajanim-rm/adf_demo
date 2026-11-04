@@ -27,14 +27,12 @@
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
+						"type": "OrcSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"type": "OrcWriteSettings"
 						}
 					},
 					"enableStaging": false,
@@ -61,10 +59,13 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_ADLS_CSV_DEMO",
+						"referenceName": "Orc1",
 						"type": "DatasetReference",
 						"parameters": {
-							"table_name": "OutCustomers"
+							"table_name": {
+								"value": "@{pipeline().parameters.Tablename}.orcfile",
+								"type": "Expression"
+							}
 						}
 					}
 				]
@@ -72,7 +73,14 @@
 			{
 				"name": "Copy data1_copy1",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
