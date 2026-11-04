@@ -50,7 +50,10 @@
 						"referenceName": "DS_ADLS_CSV_DEMO",
 						"type": "DatasetReference",
 						"parameters": {
-							"table_name": "Customers"
+							"table_name": {
+								"value": "@pipeline().parameters.Tablename",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -59,7 +62,10 @@
 						"referenceName": "Parquet",
 						"type": "DatasetReference",
 						"parameters": {
-							"Tablename": "Customers"
+							"Tablename": {
+								"value": "@pipeline().parameters.Tablename",
+								"type": "Expression"
+							}
 						}
 					}
 				]
