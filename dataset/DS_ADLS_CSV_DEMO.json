@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Tablename": {
+			"table_name": {
 				"type": "string",
 				"defaultValue": "Customers"
 			}
