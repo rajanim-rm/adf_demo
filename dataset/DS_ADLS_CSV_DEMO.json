@@ -7,8 +7,7 @@
 		},
 		"parameters": {
 			"table_name": {
-				"type": "string",
-				"defaultValue": "Customers"
+				"type": "string"
 			}
 		},
 		"annotations": [],
