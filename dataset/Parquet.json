@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@{dataset().Tablename}.utcNow()",
+					"value": "@{dataset().Tablename}.parquet.{utcNow()}",
 					"type": "Expression"
 				},
 				"folderPath": "output",
